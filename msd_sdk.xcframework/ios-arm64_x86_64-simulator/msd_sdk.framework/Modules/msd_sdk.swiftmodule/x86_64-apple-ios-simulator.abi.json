@@ -1,0 +1,532 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Reachability",
+        "printedName": "Reachability",
+        "declKind": "Class",
+        "usr": "s:7msd_sdk12ReachabilityC",
+        "mangledName": "$s7msd_sdk12ReachabilityC",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecommendationCallback",
+        "printedName": "RecommendationCallback",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onRecommendationsFetched",
+            "printedName": "onRecommendationsFetched()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7msd_sdk22RecommendationCallbackP24onRecommendationsFetchedyyF",
+            "mangledName": "$s7msd_sdk22RecommendationCallbackP24onRecommendationsFetchedyyF",
+            "moduleName": "msd_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : msd_sdk.RecommendationCallback>",
+            "sugared_genericSig": "<Self where Self : msd_sdk.RecommendationCallback>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onError",
+            "printedName": "onError()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7msd_sdk22RecommendationCallbackP7onErroryyF",
+            "mangledName": "$s7msd_sdk22RecommendationCallbackP7onErroryyF",
+            "moduleName": "msd_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : msd_sdk.RecommendationCallback>",
+            "sugared_genericSig": "<Self where Self : msd_sdk.RecommendationCallback>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7msd_sdk22RecommendationCallbackP",
+        "mangledName": "$s7msd_sdk22RecommendationCallbackP",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MSD",
+        "printedName": "MSD",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getInstance",
+            "printedName": "getInstance(token:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MSD",
+                "printedName": "msd_sdk.MSD",
+                "usr": "s:7msd_sdk3MSDC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7msd_sdk3MSDC11getInstance5tokenACSS_tKFZ",
+            "mangledName": "$s7msd_sdk3MSDC11getInstance5tokenACSS_tKFZ",
+            "moduleName": "msd_sdk",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "track",
+            "printedName": "track(eventName:properties:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7msd_sdk3MSDC5track9eventName10propertiesySS_SDySSypSgGtF",
+            "mangledName": "$s7msd_sdk3MSDC5track9eventName10propertiesySS_SDySSypSgGtF",
+            "moduleName": "msd_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRecommendations",
+            "printedName": "getRecommendations(properties:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RecommendationCallback",
+                "printedName": "msd_sdk.RecommendationCallback",
+                "usr": "s:7msd_sdk22RecommendationCallbackP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7msd_sdk3MSDC18getRecommendations10properties8callbackySDySSypSgG_AA22RecommendationCallback_ptF",
+            "mangledName": "$s7msd_sdk3MSDC18getRecommendations10properties8callbackySDySSypSgG_AA22RecommendationCallback_ptF",
+            "moduleName": "msd_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7msd_sdk3MSDC",
+        "mangledName": "$s7msd_sdk3MSDC",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "msd_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 129,
+      "length": 29,
+      "value": "\"The token was not specified\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 196,
+      "length": 19,
+      "value": "\"MSD Event Tracker\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 20,
+      "value": "\"MSD Recommendation\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 298,
+      "length": 9,
+      "value": "\"MSD SDK\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 126,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 148,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 169,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 126,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 148,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 169,
+      "length": 7,
+      "value": "\"PATCH\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Network\/Base\/RequestMethod.swift",
+      "kind": "StringLiteral",
+      "offset": 211,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/SDKLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 146,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/SDKException.swift",
+      "kind": "BooleanLiteral",
+      "offset": 253,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/SDKException.swift",
+      "kind": "IntegerLiteral",
+      "offset": 272,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/SDKException.swift",
+      "kind": "IntegerLiteral",
+      "offset": 289,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Extensions\/UserDefaults+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 10,
+      "value": "\"mad_uuid\""
+    },
+    {
+      "filePath": "\/Users\/jiju\/Desktop\/msd_sdk\/msd_sdk\/Utils\/Extensions\/UserDefaults+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 155,
+      "length": 10,
+      "value": "\"mad_uuid\""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module msd_sdk {
+  umbrella header "msd_sdk.h"
+
+  export *
+  module * { export * }
+}
+
+module msd_sdk.Swift {
+  header "msd_sdk-Swift.h"
+  requires objc
+}

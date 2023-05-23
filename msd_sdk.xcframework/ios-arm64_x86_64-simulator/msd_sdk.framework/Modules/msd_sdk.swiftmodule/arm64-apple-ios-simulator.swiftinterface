@@ -1,0 +1,23 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name msd_sdk
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import SystemConfiguration
+import _Concurrency
+import _StringProcessing
+@_exported import msd_sdk
+@_hasMissingDesignatedInitializers public class Reachability {
+  @objc deinit
+}
+public protocol RecommendationCallback {
+  func onRecommendationsFetched()
+  func onError()
+}
+@_hasMissingDesignatedInitializers public class MSD {
+  public static func getInstance(token: Swift.String) throws -> msd_sdk.MSD
+  public func track(eventName: Swift.String, properties: [Swift.String : Any?])
+  public func getRecommendations(properties: [Swift.String : Any?], callback: msd_sdk.RecommendationCallback)
+  @objc deinit
+}
