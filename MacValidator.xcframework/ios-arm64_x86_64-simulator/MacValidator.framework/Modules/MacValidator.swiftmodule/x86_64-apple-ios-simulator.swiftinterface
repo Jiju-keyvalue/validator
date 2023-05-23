@@ -7,7 +7,8 @@ import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
-public struct Validator {
-  public static func isValidEmail(_ email: Swift.String) -> Swift.Bool
-  public static func sayHello()
+@_hasMissingDesignatedInitializers public class MSD {
+  public func track(eventName: Swift.String, properties: [Swift.String : Any?])
+  public func getRecommendations()
+  @objc deinit
 }

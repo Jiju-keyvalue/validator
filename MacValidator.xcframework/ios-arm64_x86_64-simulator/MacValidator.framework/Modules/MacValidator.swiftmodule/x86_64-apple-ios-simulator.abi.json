@@ -16,32 +16,57 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Validator",
-        "printedName": "Validator",
+        "name": "MSD",
+        "printedName": "MSD",
         "children": [
           {
             "kind": "Function",
-            "name": "isValidEmail",
-            "printedName": "isValidEmail(_:)",
+            "name": "track",
+            "printedName": "track(eventName:properties:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MacValidator0B0V12isValidEmailySbSSFZ",
-            "mangledName": "$s12MacValidator0B0V12isValidEmailySbSSFZ",
+            "usr": "s:12MacValidator3MSDC5track9eventName10propertiesySS_SDySSypSgGtF",
+            "mangledName": "$s12MacValidator3MSDC5track9eventName10propertiesySS_SDySSypSgGtF",
             "moduleName": "MacValidator",
-            "static": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -49,8 +74,8 @@
           },
           {
             "kind": "Function",
-            "name": "sayHello",
-            "printedName": "sayHello()",
+            "name": "getRecommendations",
+            "printedName": "getRecommendations()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -59,23 +84,23 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:12MacValidator0B0V8sayHelloyyFZ",
-            "mangledName": "$s12MacValidator0B0V8sayHelloyyFZ",
+            "usr": "s:12MacValidator3MSDC18getRecommendationsyyF",
+            "mangledName": "$s12MacValidator3MSDC18getRecommendationsyyF",
             "moduleName": "MacValidator",
-            "static": true,
             "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:12MacValidator0B0V",
-        "mangledName": "$s12MacValidator0B0V",
+        "declKind": "Class",
+        "usr": "s:12MacValidator3MSDC",
+        "mangledName": "$s12MacValidator3MSDC",
         "moduleName": "MacValidator",
         "declAttributes": [
           "AccessControl"
-        ]
+        ],
+        "hasMissingDesignatedInitializers": true
       }
     ],
     "json_format_version": 8
