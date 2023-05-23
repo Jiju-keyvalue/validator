@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "16.2"
   spec.source       = { :git => "https://github.com/Jiju-keyvalue/validator.git", :tag => spec.version.to_s }
   # spec.source_files  = "MacValidator/**/*.{swift}"
-  spec.vendored_frameworks  = "MacValidator.xcframework"
+  spec.vendored_frameworks  = "msd_sdk.xcframework"
 
   spec.swift_versions = "5.0"
 end
